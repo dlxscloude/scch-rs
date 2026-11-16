@@ -1,0 +1,29 @@
+[package]
+name = "scch-rs"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "scch"
+path = "src/main.rs"
+
+[lib]
+name = "scch"
+path = "src/lib.rs"
+
+[dependencies]
+aes-gcm = "0.11.1"
+base64 = "0.23.1"
+clap = { version = "4.6.7", features = ["derive"] }
+hmac = "0.13.0"
+indicatif = "0.18.6"
+rand = "0.10.4"
+regex = "1.13.1"
+rpassword = "7.5.5"
+scrypt = "0.12.0"
+sevenz-rust2 = { version = "0.25.0", features = ["compress", "aes256", "util"] }
+sha2 = "0.11.1"
+walkdir = "2.5.0"
+
+[dev-dependencies]
+tempfile = "3"
